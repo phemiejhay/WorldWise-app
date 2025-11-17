@@ -3,6 +3,7 @@ import styles from "./City.module.css";
 import { useCities } from "../contexts/CitiesContext";
 import { useEffect } from "react";
 import Spinner from "./Spinner";
+import Button from "./Button";
 /* import { useState } from "react";
  */
 const formatDate = (date) =>
@@ -70,7 +71,9 @@ function City() {
         </a>
       </div>
 
-      <div>{/* <ButtonBack /> */}</div>
+      <div>
+        <Button>Back</Button>
+      </div>
     </div>
   );
 }
